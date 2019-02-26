@@ -44,7 +44,7 @@ async function initRound() {
     // Reset UI
     document.getElementById('instructions').removeAttribute('style');
 
-    document.getElementById('display').innerText = "Round 1";
+    document.getElementById('displayAB').innerText = "Round 1";
 
     document.getElementById('button-1').setAttribute('disabled', 'disabled');
     document.getElementById('button-2').setAttribute('disabled', 'disabled');
@@ -116,21 +116,21 @@ async function playerNext(playerId) {
         else if (highScores[0] >= 200) rankingName = "Pair";
 
         if (highScores.length == 2) {
-            document.getElementById('display').innerText = "Draw! " + rankingName + "!";
+            document.getElementById('displayAB').innerText = "Draw! " + rankingName + "!";
         }
         else {
             if (max(scores) === scores[0]) {
-                document.getElementById('display').innerText = document.getElementById('name-1').value + " wins! " + rankingName + "!";
+                document.getElementById('displayAB').innerText = document.getElementById('name-1').value + " wins! " + rankingName + "!";
             }
             else {
-                document.getElementById('display').innerText = document.getElementById('name-2').value + " wins! " + rankingName + "!";
+                document.getElementById('displayAB').innerText = document.getElementById('name-2').value + " wins! " + rankingName + "!";
             }
         }
 
         return;
     }
     else {
-        document.getElementById('display').innerText = "Round " + (game.stage + 1);
+        document.getElementById('displayAB').innerText = "Round " + (game.stage + 1);
     }
 
     render();

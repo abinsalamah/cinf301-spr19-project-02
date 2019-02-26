@@ -1,9 +1,18 @@
-html, body {
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    margin-left: 20px;
+ 
+ body {
+    
+    width: 90%;
+    height: 90%;
+    margin: 90;
+    margin-left: 0px;
     overflow: hidden;
+    background: url(https://www.bypeople.com/wp-content/uploads/2015/05/css-gradient-background.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+strong {
+    color: black;
 }
 
 .playerWrapper {
@@ -14,13 +23,14 @@ html, body {
 }
 
 .cardWrapper {
-    height: 200px;
-    width: calc(137.7px * 5);
+    height: 150px;
+    width: calc(137.7px * 5 );
     float: left;
 }
 
 .playerTurn {
-    border: 2px solid blue;
+    border: 4px solid black;
+    height: 210px;
 }
 
 .card {
@@ -33,3 +43,10 @@ html, body {
     padding-top: 20px !important;
     padding-bottom: 20px !important;
 }
+
+#instructions , .disp {
+    text-align: center;
+    color: white;
+
+}
+
