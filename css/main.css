@@ -6,3 +6,30 @@ html, body {
     overflow: hidden;
 }
 
+.playerWrapper {
+    margin: 20px;
+    height: 200px;
+    width: calc(137.7px * 5 + 180px);
+    margin-bottom: 20px;
+}
+
+.cardWrapper {
+    height: 200px;
+    width: calc(137.7px * 5);
+    float: left;
+}
+
+.playerTurn {
+    border: 2px solid blue;
+}
+
+.card {
+    height: 200px;
+    width: calc(200px * 0.6885);
+}
+
+.cardSelected {
+    height: 160px !important;
+    padding-top: 20px !important;
+    padding-bottom: 20px !important;
+}

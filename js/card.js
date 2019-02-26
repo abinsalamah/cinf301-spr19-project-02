@@ -1,3 +1,10 @@
+/*
+* Abdullah and Hassan
+*
+*/
+
+// cards js
+
 const cardTypes = [
     "2",
     "3",

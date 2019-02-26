@@ -6,30 +6,36 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>Poker 5</title>
         <link rel="stylesheet" type="text/css" href="css/main.css">
+        <script src="js/ui.js"></script>
+        <script src="js/util.js"></script>
+        <script src="js/player.js"></script>
+        <script src="js/card.js"></script>
+        <script src="js/poker.js"></script>
 
     </head>
     <body>
-        <input id="start" type="button" value="Start new game"/>
-        <div >
-            <div >
+        <input id="start" type="button" value="Start new game" style = "float : right" onclick="initRound()"/>
+        <div class="playerWrapper" id="player-1">
+            <div class="cardWrapper" id="hand-1">
 
             </div>
-            <div>
-                <input type="text" value="Player 1" /><br />
-                <input type="button" value="Next"/>
+            <div style="float: right;"> 
+                <input type="text" value="Player 1" id="name-1" /><br />
+                <input type="button" value="Next" id="button-1" onclick="playerNext(0)" />
             </div>
         </div>
-        <div>
-            <div>
+        <div class="playerWrapper" id="player-2">
+            <div class="cardWrapper" id="hand-2">
                 
             </div>
-            <div>
+            <div style="float: right;">
                 <input type="text" value="Player 2"/><br />
-                <input type="button" value="Next"/>
+                <input type="button" value="Next" id="button-2" onclick="playerNext(1)" />
             </div>
         </div>
         <div id="display"></div><br/>
         <div id="instructions">
+            
         </div>
     </body>
 </html>
